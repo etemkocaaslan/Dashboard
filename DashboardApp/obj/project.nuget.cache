@@ -1,10 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "PWcMxTDpKY4OcADrApVvIFSahqzvjeeSec1dwoGfxKCo+fvgeZCg6bvRJOQUHhLDeGt1HO9QQDIT49blylHaFw==",
+  "dgSpecHash": "zgD5ci90sH29dYEBSh9NUaF901v4QohOcGK7amfNvtLkzatQPxvKPUx4ZceekWP4BQElsssGcBNjNunryAECHw==",
   "success": true,
   "projectFilePath": "C:\\Users\\kasla\\MyProjects\\Dashboard\\DashboardApp\\DashboardApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kasla\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512"
+    "C:\\Users\\kasla\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\google.apis.calendar.v3\\1.68.0.3402\\google.apis.calendar.v3.1.68.0.3402.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\google.apis.core\\1.68.0\\google.apis.core.1.68.0.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512"
   ],
   "logs": []
 }

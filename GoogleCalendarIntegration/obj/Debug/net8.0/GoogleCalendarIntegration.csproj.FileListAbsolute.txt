@@ -22,3 +22,16 @@ C:\Users\kasla\source\repos\Dashboard_New\GoogleCalendarIntegration\obj\Debug\ne
 C:\Users\kasla\source\repos\Dashboard_New\GoogleCalendarIntegration\obj\Debug\net8.0\refint\GoogleCalendarIntegration.dll
 C:\Users\kasla\source\repos\Dashboard_New\GoogleCalendarIntegration\obj\Debug\net8.0\GoogleCalendarIntegration.pdb
 C:\Users\kasla\source\repos\Dashboard_New\GoogleCalendarIntegration\obj\Debug\net8.0\ref\GoogleCalendarIntegration.dll
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\bin\Debug\net8.0\GoogleCalendarIntegration.deps.json
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\bin\Debug\net8.0\GoogleCalendarIntegration.dll
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\bin\Debug\net8.0\GoogleCalendarIntegration.pdb
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\obj\Debug\net8.0\GoogleCalendarIntegration.csproj.AssemblyReference.cache
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\obj\Debug\net8.0\GoogleCalendarIntegration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\obj\Debug\net8.0\GoogleCalendarIntegration.AssemblyInfoInputs.cache
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\obj\Debug\net8.0\GoogleCalendarIntegration.AssemblyInfo.cs
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\obj\Debug\net8.0\GoogleCalendarIntegration.csproj.CoreCompileInputs.cache
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\obj\Debug\net8.0\GoogleCalendarIntegration.sourcelink.json
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\obj\Debug\net8.0\GoogleCalendarIntegration.dll
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\obj\Debug\net8.0\refint\GoogleCalendarIntegration.dll
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\obj\Debug\net8.0\GoogleCalendarIntegration.pdb
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarIntegration\obj\Debug\net8.0\ref\GoogleCalendarIntegration.dll

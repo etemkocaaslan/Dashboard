@@ -53,7 +53,7 @@ namespace DashboardApp.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DashboardApp;V1.0.0.0;component/views/budgetview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DashboardApp;component/views/budgetview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\BudgetView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

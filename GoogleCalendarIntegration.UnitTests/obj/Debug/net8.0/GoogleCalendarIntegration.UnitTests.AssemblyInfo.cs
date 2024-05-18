@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoogleCalendarIntegration.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58b6b5006332d66209b7431e5e782a3985484da1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe3b9a94da9112ce7e6b068b10738510f037786f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoogleCalendarIntegration.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoogleCalendarIntegration.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

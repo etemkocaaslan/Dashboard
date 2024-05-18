@@ -61,7 +61,7 @@ namespace DashboardApp.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DashboardApp;V1.0.0.0;component/views/todoview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DashboardApp;component/views/todoview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\TodoView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

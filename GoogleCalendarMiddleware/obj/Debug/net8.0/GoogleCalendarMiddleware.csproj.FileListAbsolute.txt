@@ -1,0 +1,16 @@
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\bin\Debug\net8.0\GoogleCalendarMiddleware.deps.json
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\bin\Debug\net8.0\GoogleCalendarMiddleware.dll
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\bin\Debug\net8.0\GoogleCalendarMiddleware.pdb
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\bin\Debug\net8.0\GoogleCalendarIntegration.dll
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\bin\Debug\net8.0\GoogleCalendarIntegration.pdb
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\GoogleCalendarMiddleware.csproj.AssemblyReference.cache
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\GoogleCalendarMiddleware.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\GoogleCalendarMiddleware.AssemblyInfoInputs.cache
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\GoogleCalendarMiddleware.AssemblyInfo.cs
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\GoogleCalendarMiddleware.csproj.CoreCompileInputs.cache
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\GoogleCalendarMiddleware.sourcelink.json
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\GoogleCalendarMiddleware.csproj.CopyComplete
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\GoogleCalendarMiddleware.dll
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\refint\GoogleCalendarMiddleware.dll
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\GoogleCalendarMiddleware.pdb
+C:\Users\kasla\MyProjects\Dashboard\GoogleCalendarMiddleware\obj\Debug\net8.0\ref\GoogleCalendarMiddleware.dll

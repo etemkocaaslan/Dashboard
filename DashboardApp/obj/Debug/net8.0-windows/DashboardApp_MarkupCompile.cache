@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\kasla\source\repos\Dashboard_New\DashboardApp\obj\Debug\net8.0-windows\
+C:\Users\kasla\MyProjects\Dashboard\DashboardApp\obj\Debug\net8.0-windows\
 DashboardApp
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\kasla\source\repos\Dashboard_New\DashboardApp\App.xaml
+C:\Users\kasla\MyProjects\Dashboard\DashboardApp\App.xaml
 5557072530
 
-20-445407189
-199-932700446
+211038303701
+207-939845247
 MainWindow.xaml;Views\BudgetView.xaml;Views\CalendarView.xaml;Views\GoalView.xaml;Views\TodoView.xaml;
 
 False

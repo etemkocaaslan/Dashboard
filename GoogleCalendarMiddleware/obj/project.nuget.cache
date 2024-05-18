@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "YpwuTWY3Fke4gOHdEgUtUAdGrnjDLnc/4VfrTap30TfGBErZJtNj3m2kJiQWPUNKR7vjhvch4P3d0HaJC2QjDA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarMiddleware\\GoogleCalendarMiddleware.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kasla\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\google.apis.calendar.v3\\1.68.0.3402\\google.apis.calendar.v3.1.68.0.3402.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\google.apis.core\\1.68.0\\google.apis.core.1.68.0.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\kasla\\.nuget\\packages\\system.management\\7.0.2\\system.management.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
