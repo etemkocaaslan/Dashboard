@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="DashboardApp.Views.BudgetView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:viewmodels="clr-namespace:DashboardApp.ViewModels">
+    <UserControl.DataContext>
+        <viewmodels:BudgetViewModel />
+    </UserControl.DataContext>
+    <Grid>
+        <StackPanel>
+            <TextBox Text="{Binding NewBudgetItem.Name, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="10" />
+            <TextBox Text="{Binding NewBudgetItem.Amount, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="10" />
+            <DatePicker SelectedDate="{Binding NewBudgetItem.Date, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="10" />
+            <CheckBox Content="Income" IsChecked="{Binding NewBudgetItem.IsIncome}" Margin="10" />
+            <Button Content="Add Budget Item" Command="{Binding AddBudgetItemCommand}" Width="150" Margin="10" />
+            <ListBox ItemsSource="{Binding BudgetItems}" SelectedItem="{Binding SelectedBudgetItem}" DisplayMemberPath="Name" Width="200" Margin="10" />
+            <Button Content="Edit Budget Item" Command="{Binding EditBudgetItemCommand}" Width="150" Margin="10" IsEnabled="{Binding SelectedBudgetItem}" />
+            <Button Content="Delete Budget Item" Command="{Binding DeleteBudgetItemCommand}" Width="150" Margin="10" IsEnabled="{Binding SelectedBudgetItem}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

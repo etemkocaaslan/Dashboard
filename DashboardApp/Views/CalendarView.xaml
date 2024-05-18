@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="DashboardApp.Views.CalendarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:viewmodels="clr-namespace:DashboardApp.ViewModels">
+    <UserControl.DataContext>
+        <viewmodels:CalendarViewModel />
+    </UserControl.DataContext>
+    <Grid>
+        <StackPanel>
+            <TextBox Text="{Binding NewCalendarEvent.Title, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="10" />
+            <DatePicker SelectedDate="{Binding NewCalendarEvent.StartDate, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="10" />
+            <DatePicker SelectedDate="{Binding NewCalendarEvent.EndDate, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="10" />
+            <TextBox Text="{Binding NewCalendarEvent.Description, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="10" />
+            <Button Content="Add Event" Command="{Binding AddEventCommand}" Width="100" Margin="10" />
+            <ListBox ItemsSource="{Binding CalendarEvents}" SelectedItem="{Binding SelectedCalendarEvent}" DisplayMemberPath="Title" Width="200" Margin="10" />
+            <Button Content="Edit Event" Command="{Binding EditEventCommand}" Width="100" Margin="10" IsEnabled="{Binding SelectedCalendarEvent, Converter={StaticResource ObjectToBooleanConverter}}" />
+            <Button Content="Delete Event" Command="{Binding DeleteEventCommand}" Width="100" Margin="10" IsEnabled="{Binding SelectedCalendarEvent, Converter={StaticResource ObjectToBooleanConverter}}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

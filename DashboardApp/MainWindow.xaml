@@ -1,0 +1,22 @@
+﻿<Window x:Class="DashboardApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800"
+        xmlns:views="clr-namespace:DashboardApp.Views">
+    <Grid>
+        <TabControl>
+            <TabItem Header="To-Do List">
+                <views:TodoView />
+            </TabItem>
+            <TabItem Header="Calendar">
+                <views:CalendarView />
+            </TabItem>
+            <TabItem Header="Budget">
+                <views:BudgetView />
+            </TabItem>
+            <TabItem Header="Goals">
+                <views:GoalView />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

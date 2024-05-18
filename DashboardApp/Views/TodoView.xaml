@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="DashboardApp.Views.TodoView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:viewmodels="clr-namespace:DashboardApp.ViewModels">
+    <UserControl.DataContext>
+        <viewmodels:TodoViewModel />
+    </UserControl.DataContext>
+    <Grid>
+        <StackPanel>
+            <Grid Margin="10">
+                <TextBox x:Name="TodoTitleTextBox" Text="{Binding NewTodoTitle, UpdateSourceTrigger=PropertyChanged}" Width="200" />
+                <TextBlock Text="Enter Todo Title" IsHitTestVisible="False" Foreground="Gray" 
+                           VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5,0"
+                           Visibility="{Binding Text, ElementName=TodoTitleTextBox, Converter={StaticResource StringToVisibilityConverter}}" />
+            </Grid>
+            <Button Content="Add Todo" Command="{Binding AddTodoCommand}" Width="100" Margin="10" />
+            <ListBox ItemsSource="{Binding TodoItems}" SelectedItem="{Binding SelectedTodoItem}" DisplayMemberPath="Title" Width="200" Margin="10" />
+            <Button Content="Edit Todo" Command="{Binding EditTodoCommand}" Width="100" Margin="10" IsEnabled="{Binding SelectedTodoItem, Converter={StaticResource ObjectToBooleanConverter}}" />
+            <Button Content="Delete Todo" Command="{Binding DeleteTodoCommand}" Width="100" Margin="10" IsEnabled="{Binding SelectedTodoItem, Converter={StaticResource ObjectToBooleanConverter}}" />
+        </StackPanel>
+    </Grid>
+</UserControl>

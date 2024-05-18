@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iN7LKZkK/kPmrAojZbnD9vw2tg0jsfVnLgHpd0XBzF8MPCTgZv9E6cxKcoA0/yv1WDjwyqLuEUhIWe9T8Hg06Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\DashboardApp\\DashboardApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kasla\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}
