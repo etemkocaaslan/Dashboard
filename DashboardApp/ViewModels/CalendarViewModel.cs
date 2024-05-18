@@ -1,86 +1,109 @@
-﻿//using CommunityToolkit.Mvvm.Input;
-//using System.Collections.ObjectModel;
-//using DashboardApp.Models;
+﻿using CommunityToolkit.Mvvm.Input;
+using DashboardApp.ViewModels;
+using GoogleCalendarIntegration;
+using System.Collections.ObjectModel;
+using System.IO;
+using System.Windows.Input;
 
-//namespace DashboardApp.ViewModels
-//{
-//    public class CalendarViewModel : ViewModelBase
-//    {
-//        private ObservableCollection<CalendarEvent> _calendarEvents = new ObservableCollection<CalendarEvent>();
-//        public ObservableCollection<CalendarEvent> CalendarEvents
-//        {
-//            get => _calendarEvents;
-//            set => SetProperty(ref _calendarEvents, value);
-//        }
+public class CalendarViewModel : ViewModelBase
+{
+    private GoogleCalendarService _calendarService;
+    public ObservableCollection<CalendarEvent> Events { get; set; }
 
-//        private CalendarEvent _selectedCalendarEvent;
-//        public CalendarEvent SelectedCalendarEvent
-//        {
-//            get => _selectedCalendarEvent;
-//            set
-//            {
-//                SetProperty(ref _selectedCalendarEvent, value);
-//                EditEventCommand.NotifyCanExecuteChanged();
-//                DeleteEventCommand.NotifyCanExecuteChanged();
-//            }
-//        }
+    // Properties for new event details
+    private string _newEventSummary;
+    public string NewEventSummary
+    {
+        get { return _newEventSummary; }
+        set { _newEventSummary = value; OnPropertyChanged(); }
+    }
 
-//        private CalendarEvent _newCalendarEvent = new CalendarEvent();
-//        public CalendarEvent NewCalendarEvent
-//        {
-//            get => _newCalendarEvent;
-//            set => SetProperty(ref _newCalendarEvent, value);
-//        }
+    private string _newEventDescription;
+    public string NewEventDescription
+    {
+        get { return _newEventDescription; }
+        set { _newEventDescription = value; OnPropertyChanged(); }
+    }
 
-//        public IRelayCommand AddEventCommand { get; }
-//        public IRelayCommand EditEventCommand { get; }
-//        public IRelayCommand DeleteEventCommand { get; }
+    private DateTime _newEventStart;
+    public DateTime NewEventStart
+    {
+        get { return _newEventStart; }
+        set { _newEventStart = value; OnPropertyChanged(); }
+    }
 
-//        public CalendarViewModel()
-//        {
-//            AddEventCommand = new RelayCommand(AddEvent);
-//            EditEventCommand = new RelayCommand(EditEvent, () => SelectedCalendarEvent != null);
-//            DeleteEventCommand = new RelayCommand(DeleteEvent, () => SelectedCalendarEvent != null);
-//        }
+    private DateTime _newEventEnd;
+    public DateTime NewEventEnd
+    {
+        get { return _newEventEnd; }
+        set { _newEventEnd = value; OnPropertyChanged(); }
+    }
 
-//        private void AddEvent()
-//        {
-//            if (!string.IsNullOrWhiteSpace(NewCalendarEvent.Title))
-//            {
-//                NewCalendarEvent.Id = CalendarEvents.Count + 1;
-//                CalendarEvents.Add(new CalendarEvent
-//                {
-//                    Id = NewCalendarEvent.Id,
-//                    Title = NewCalendarEvent.Title,
-//                    StartDate = NewCalendarEvent.StartDate,
-//                    EndDate = NewCalendarEvent.EndDate,
-//                    Description = NewCalendarEvent.Description
-//                });
-//                NewCalendarEvent = new CalendarEvent();
-//            }
-//        }
+    public ICommand LoadEventsCommand { get; }
+    public ICommand AddEventCommand { get; }
+    public ICommand UpdateEventCommand { get; }
+    public ICommand DeleteEventCommand { get; }
 
-//        private void EditEvent()
-//        {
-//            if (SelectedCalendarEvent != null)
-//            {
-//                var item = CalendarEvents.FirstOrDefault(e => e.Id == SelectedCalendarEvent.Id);
-//                if (item != null)
-//                {
-//                    item.Title = SelectedCalendarEvent.Title;
-//                    item.StartDate = SelectedCalendarEvent.StartDate;
-//                    item.EndDate = SelectedCalendarEvent.EndDate;
-//                    item.Description = SelectedCalendarEvent.Description;
-//                }
-//            }
-//        }
+    public CalendarViewModel()
+    {
+        _calendarService = new GoogleCalendarService();
+        InitializeService();
 
-//        private void DeleteEvent()
-//        {
-//            if (SelectedCalendarEvent != null)
-//            {
-//                CalendarEvents.Remove(SelectedCalendarEvent);
-//            }
-//        }
-//    }
-//}
+        Events = new ObservableCollection<CalendarEvent>();
+
+        LoadEventsCommand = new RelayCommand(async () => await LoadEvents());
+        AddEventCommand = new RelayCommand(async () => await AddEvent());
+        UpdateEventCommand = new RelayCommand<CalendarEvent>(async (e) => await UpdateEvent(e));
+        DeleteEventCommand = new RelayCommand<CalendarEvent>(async (e) => await DeleteEvent(e));
+
+        // Set default values for the new event
+        NewEventStart = DateTime.Now;
+        NewEventEnd = DateTime.Now.AddHours(1);
+    }
+
+    private void InitializeService()
+    {
+        string credentialsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Config", "credentials.json");
+        if (!File.Exists(credentialsPath))
+        {
+            throw new FileNotFoundException("The credentials file was not found.", credentialsPath);
+        }
+        _calendarService.InitializeService(credentialsPath);
+    }
+
+    private async Task LoadEvents()
+    {
+        var events = await _calendarService.GetUpcomingEventsAsync();
+        Events.Clear();
+        foreach (var eventItem in events)
+        {
+            Events.Add(eventItem);
+        }
+    }
+
+    private async Task AddEvent()
+    {
+        var newEvent = new CalendarEvent
+        {
+            Summary = NewEventSummary,
+            Description = NewEventDescription,
+            Start = NewEventStart,
+            End = NewEventEnd
+        };
+
+        await _calendarService.AddEventAsync(newEvent);
+        await LoadEvents();
+    }
+
+    private async Task UpdateEvent(CalendarEvent updatedEvent)
+    {
+        await _calendarService.UpdateEventAsync(updatedEvent);
+        await LoadEvents();
+    }
+
+    private async Task DeleteEvent(CalendarEvent eventToDelete)
+    {
+        await _calendarService.DeleteEventAsync(eventToDelete.Id);
+        await LoadEvents();
+    }
+}
