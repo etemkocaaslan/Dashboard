@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X9X1EKOcu+sGxHesCtTxo7OIx9MCvFcEVX51wJ+H0t3LDdOZUDK17uKcsNq/bBqM9ALy/trmzWWKLFskPbXxKQ==",
+  "dgSpecHash": "tU72SBSCaXAe29yTzh1Qou1z0HyaV+1MnW5M3Xwk3QqcjxAsSZz0oKY+QM8EY1ZLw4AP9l4CI8MxjdRdfkNZow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegration.UnitTests\\GoogleCalendarIntegration.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegration.UnitTests\\GoogleCalendarIntegration.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kasla\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\kasla\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LYO5YkxGt2dnNX66g9o9ZnxyX3PV8CkfUsZclfeARuzcQgKZJWUNwp1SCa0caues2U9joUTPxmMXhOkNy6pTRA==",
+  "dgSpecHash": "PvQz4SapzgHKhB1Yut5CxYPrrm2WbwyGmHA0IIrc2bE8xlWIljRF7vtGUun+U+wnAc/FDAhcd40HHOOXOWgUdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegration\\GoogleCalendarIntegration.csproj",
+  "projectFilePath": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegration\\GoogleCalendarIntegration.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kasla\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",
     "C:\\Users\\kasla\\.nuget\\packages\\google.apis.auth\\1.68.0\\google.apis.auth.1.68.0.nupkg.sha512",

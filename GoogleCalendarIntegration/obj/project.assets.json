@@ -313,11 +313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegration\\GoogleCalendarIntegration.csproj",
+      "projectUniqueName": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegration\\GoogleCalendarIntegration.csproj",
       "projectName": "GoogleCalendarIntegration",
-      "projectPath": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegration\\GoogleCalendarIntegration.csproj",
+      "projectPath": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegration\\GoogleCalendarIntegration.csproj",
       "packagesPath": "C:\\Users\\kasla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegration\\obj\\",
+      "outputPath": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegration\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

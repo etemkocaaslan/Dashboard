@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tSWGV2JDOYQhsAIm+ZlA3jXBBQfx74lrkiUD8oay50As/YR1fAjnq3x1l5TNxLXKYjXOI/qYyz8zn5MRqqpDZw==",
+  "dgSpecHash": "IoOtUPmQiz0GsB8j71mrGntpohSCb1gyXr1lE9T5xpBN6WwoomQqzgLLsXJz0wqVC4QuRI2AXxQIhmyjqWpzJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegrationTest\\GoogleCalendarIntegrationTest.csproj",
+  "projectFilePath": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegrationTest\\GoogleCalendarIntegrationTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kasla\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\kasla\\.nuget\\packages\\google.apis\\1.68.0\\google.apis.1.68.0.nupkg.sha512",

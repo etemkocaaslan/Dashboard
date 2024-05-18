@@ -714,11 +714,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegrationTest\\GoogleCalendarIntegrationTest.csproj",
+      "projectUniqueName": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegrationTest\\GoogleCalendarIntegrationTest.csproj",
       "projectName": "GoogleCalendarIntegrationTest",
-      "projectPath": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegrationTest\\GoogleCalendarIntegrationTest.csproj",
+      "projectPath": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegrationTest\\GoogleCalendarIntegrationTest.csproj",
       "packagesPath": "C:\\Users\\kasla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegrationTest\\obj\\",
+      "outputPath": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegrationTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -740,8 +740,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegration\\GoogleCalendarIntegration.csproj": {
-              "projectPath": "C:\\Users\\kasla\\source\\repos\\Dashboard_New\\GoogleCalendarIntegration\\GoogleCalendarIntegration.csproj"
+            "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegration\\GoogleCalendarIntegration.csproj": {
+              "projectPath": "C:\\Users\\kasla\\MyProjects\\Dashboard\\GoogleCalendarIntegration\\GoogleCalendarIntegration.csproj"
             }
           }
         }
